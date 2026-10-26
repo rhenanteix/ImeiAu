@@ -257,6 +257,28 @@
 .simCard small {
   margin-top: 20px;
 }
+.simCard .cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 1.5rem;
+  padding: 15px 22px;
+  background: #d7f19d;
+  color: #183e32;
+  font: 600 14px Arial;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    background 180ms ease,
+    transform 180ms ease;
+}
+.simCard .cta-button:hover {
+  background: #c8e787;
+  transform: translateY(-2px);
+}
 .faq {
   max-width: 850px;
 }

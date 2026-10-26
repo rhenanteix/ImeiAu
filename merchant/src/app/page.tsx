@@ -167,7 +167,7 @@ export default function Page() {
           </div>
         </section>
         */}
-        <section id="demonstracao" className={`${styles.section} ${styles.demo}`}>
+<section id="demonstracao" className={`${styles.section} ${styles.demo}`}>
           <div data-reveal>
             <p className={styles.eyebrow}>02 / VEJA EM AÇÃO</p>
             <h2 data-reveal>
@@ -176,15 +176,15 @@ export default function Page() {
               gera valor para sua <em>loja.</em>
             </h2>
             <p>
-              Em poucos cliques, seu cliente avalia o celular usado e recebe
+              Em poucos cliques, seu cliente evaluates o celular usado e recebe
               crédito na hora. Mais conversão, mais vendas e menos estoque parado.
             </p>
             <div className={styles.heroActions} style={{ marginTop: "2rem" }}>
               <a href="#contato" style={{ textDecoration: "none" }}>
                 Quero levar o IMEIAU para minha loja ↗
               </a>
-              <a href="https://www.youtube.com/results?search_query=IMEIAU+trade-in+demo" target="_blank" rel="noopener noreferrer">
-                Assistir demonstração completa ↗
+              <a href="/dashboard" style={{ textDecoration: "none" }}>
+                Experimentar o simulador ↗
               </a>
             </div>
             <small style={{ display: "block", marginTop: "1rem", opacity: 0.7 }}>
@@ -192,38 +192,20 @@ export default function Page() {
             </small>
           </div>
           <div data-reveal data-delay="160" className={styles.simCard}>
-            <span>▶</span>
-            <h3>Transforme usado em venda.</h3>
+            <span>↻</span>
+            <h3>Comece pelo que você já tem.</h3>
             <p>
-              Veja o fluxo completo: avaliação, proposta de crédito e fechamento
-              da troca — pensado para o varejo de celular.
+              Tenha o modelo e o estado do celular em mãos. O IMEI só entra na
+              confirmação.
             </p>
-            <div
-              style={{
-                position: "relative",
-                width: "100%",
-                paddingTop: "56.25%",
-                borderRadius: "16px",
-                overflow: "hidden",
-                marginTop: "1.5rem",
-                boxShadow: "0 40px 80px -60px rgba(15, 23, 42, 0.9)",
-              }}
-            >
-              <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Demonstração IMEIAU"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                  border: 0,
-                }}
-              />
-            </div>
+            <p>
+              Experimente o simulador diretamente na plataforma: avalie um
+              aparelho, veja a estimativa de crédito e entenda cada etapa do
+              fluxo.
+            </p>
+            <a href="/dashboard" className={styles.ctaButton} style={{ marginTop: "1.5rem" }}>
+              Ir para o simulador ↗
+            </a>
             <small style={{ display: "block", marginTop: "1rem" }}>
               Quer ver com o catálogo da sua loja? Fale com a gente pelo formulário.
             </small>

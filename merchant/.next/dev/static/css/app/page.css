@@ -260,6 +260,28 @@
 .landing_simCard__aVofF small {
   margin-top: 20px;
 }
+.landing_simCard__aVofF .landing_cta-button__OEB4a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 1.5rem;
+  padding: 15px 22px;
+  background: #d7f19d;
+  color: #183e32;
+  font: 600 14px Arial;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    background 180ms ease,
+    transform 180ms ease;
+}
+.landing_simCard__aVofF .landing_cta-button__OEB4a:hover {
+  background: #c8e787;
+  transform: translateY(-2px);
+}
 .landing_faq__AfA8B {
   max-width: 850px;
 }

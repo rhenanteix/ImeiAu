@@ -110,7 +110,7 @@ export async function POST(req: NextRequest) {
     // Do not log submitted data or SMTP credentials.
     console.error(
       "IMEIAU contact request failed",
-      error instanceof Error ? error.name : "unknown",
+      error instanceof Error ? error.message : String(error),
     );
     return json(
       { detail: "Não foi possível enviar. Tente novamente mais tarde." },

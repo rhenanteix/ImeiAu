@@ -1,2 +1,1 @@
-{"timestamp":"00:00:01.542","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:03:34.525","source":"Server","level":"ERROR","message":"IMEIAU contact request failed \"PrismaClientKnownRequestError\""}
+{"timestamp":"00:00:01.596","source":"Server","level":"LOG","message":""}
