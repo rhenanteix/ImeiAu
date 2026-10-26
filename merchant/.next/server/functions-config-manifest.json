@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "functions": {
+    "/api/[...path]": {},
+    "/api/b2b/buyer/register": {},
+    "/api/b2b/matching/auto": {},
+    "/api/b2b/offers": {},
+    "/api/b2b/payment/create": {},
+    "/api/b2b/payment/webhook": {},
+    "/api/contact": {},
+    "/api/v1/imei/validate": {},
+    "/api/v1/shipping/label/[code]": {},
+    "/api/v1/uploads/confirm": {},
+    "/api/v1/uploads/presign": {},
+    "/api/v1/webhooks/shipping-status": {}
+  }
+}

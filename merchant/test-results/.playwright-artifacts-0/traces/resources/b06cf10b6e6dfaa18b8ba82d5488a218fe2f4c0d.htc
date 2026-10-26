@@ -1,0 +1,103 @@
+2:"(app-pages-browser)/./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js"
+3:"app-pages-internals"
+4:"static/chunks/app-pages-internals.js"
+5:I["$2",["$3","$4"],"SegmentViewNode"]
+7:"$Sreact.fragment"
+18:"(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js"
+19:I["$18",["$3","$4"],""]
+1b:"(app-pages-browser)/./node_modules/next/dist/client/components/render-from-template-context.js"
+1c:I["$1b",["$3","$4"],""]
+37:"(app-pages-browser)/./src/components/landing-motion.tsx"
+38:"static/chunks/app/page.js"
+39:I["$37",["app/page","$38"],"LandingMotion"]
+42:"(app-pages-browser)/./node_modules/next/dist/client/app-dir/link.js"
+43:I["$42",["app/page","$38"],""]
+5c:"(app-pages-browser)/./src/components/simulator.tsx"
+5d:I["$5c",["app/page","$38"],"Simulator"]
+96:"(app-pages-browser)/./node_modules/next/dist/lib/framework/boundary-components.js"
+97:I["$96",["$3","$4"],"OutletBoundary"]
+99:"$Sreact.suspense"
+a6:"ViewportBoundary"
+a7:I["$96",["$3","$4"],"$a6"]
+b0:"MetadataBoundary"
+b1:I["$96",["$3","$4"],"$b0"]
+:HL["/_next/static/css/app/layout.css?v=1793041742034","style"]
+:HL["/_next/static/css/app/page.css?v=1793041742034","style"]
+9:D"$13"
+9:D"$a"
+9:D"$15"
+1e:D"$20"
+1e:D"$1f"
+1e:D"$22"
+1e:D"$21"
+1e:D"$23"
+1e:[["$","title",null,{"children":"404: This page could not be found."},"$21","$24",1],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}},"$21","$27",1],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404},"$21","$28",1],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."},"$21","$2a",1]},"$21","$29",1]]},"$21","$26",1]},"$21","$25",1]]
+9:["$","html",null,{"lang":"pt-BR","children":["$","body",null,{"suppressHydrationWarning":true,"children":["$","$L19",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L1c",null,{},null,"$1a",1],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","$L5","c-not-found",{"type":"not-found","pagePath":"__next_builtin__not-found.js","children":["$1e",[]]},null,"$1d",0],"forbidden":"$undefined","unauthorized":"$undefined","segmentViewBoundaries":[["$","$L5",null,{"type":"boundary:not-found","pagePath":"__next_builtin__not-found.js@boundary"},null,"$2b",1],"$undefined","$undefined",["$","$L5",null,{"type":"boundary:global-error","pagePath":"__next_builtin__global-error.js"},null,"$2c",1]]},null,"$17",1]},"$a","$16",1]},"$a","$14",1]
+30:D"$34"
+30:D"$31"
+30:D"$36"
+3b:D"$3f"
+3b:D"$3c"
+3b:D"$41"
+3b:["$","$L43",null,{"className":"landing_logo__Z__TN","href":"/","children":["volta",["$","span",null,{"children":"â†—"},"$31","$44",1]]},"$3c","$40",1]
+48:D"$4a"
+48:D"$49"
+48:D"$4c"
+48:["$","$L43",null,{"href":"/dashboard","children":"Entrar na plataforma â†—"},"$49","$4b",1]
+30:["$","$L39",null,{"className":"landing_landing__nrxBG","children":[["$","header",null,{"className":"landing_nav__knAbU","children":["$3b",["$","nav",null,{"aria-label":"Menu principal","children":[["$","a",null,{"href":"#como-funciona","children":"Como funciona"},"$31","$46",1],["$","a",null,{"href":"#simular","children":"Simular troca"},"$31","$47",1],"$48"]},"$31","$45",1]]},"$31","$3a",1],["$","main",null,{"children":[["$","section",null,{"className":"landing_hero__wie8N","children":[["$","div",null,{"className":"$undefined","children":[["$","p",null,{"data-reveal":true,"className":"landing_eyebrow__xr4rD","children":"MENOS NA GAVETA. MAIS POSSIBILIDADES."},"$31","$50",1],["$","h1",null,{"children":[["$","span",null,{"children":["$","span",null,{"children":"Seu prÃ³ximo"},"$31","$53",1]},"$31","$52",1],["$","span",null,{"children":["$","span",null,{"children":"comeÃ§o estÃ¡"},"$31","$55",1]},"$31","$54",1],["$","span",null,{"children":["$","span",null,{"children":["no seu ",["$","em",null,{"children":"usado."},"$31","$58",1]]},"$31","$57",1]},"$31","$56",1]]},"$31","$51",1],["$","p",null,{"data-reveal":true,"data-delay":"180","className":"landing_intro__1q4zB","children":"Seu celular ainda tem valor. Com o trade-in, vocÃª troca o aparelho que jÃ¡ tem por crÃ©dito para a prÃ³xima compra."},"$31","$59",1],["$","div",null,{"data-reveal":true,"data-delay":"280","className":"landing_heroActions__3CEO8","children":[["$","$L5d",null,{},"$31","$5b",1],["$","a",null,{"href":"#como-funciona","children":["Entenda a troca ",["$","span",null,{"aria-hidden":"true","children":"â†“"},"$31","$5f",1]]},"$31","$5e",1]]},"$31","$5a",1],["$","p",null,{"data-reveal":true,"data-delay":"340","className":"landing_caption__CCXsF","children":"ConheÃ§a a experiÃªncia Â· Sem compromisso Â· DemonstraÃ§Ã£o"},"$31","$60",1]]},"$31","$4f",1],["$","div",null,{"data-reveal":true,"data-delay":"160","className":"landing_scene__zgF5_","aria-label":"IlustraÃ§Ã£o de um celular usado se transformando em crÃ©dito","children":[["$","div",null,{"className":"landing_orbit___jZCi"},"$31","$62",1],["$","span",null,{"className":"landing_sceneLabel__RjNo5","children":"TODO APARELHO MERECE UMA NOVA VOLTA"},"$31","$63",1],["$","div",null,{"className":"landing_phone__qRz6A","children":[["$","div",null,{"className":"landing_cameras__69QRn","children":["â— â—",["$","br",null,{},"$31","$66",1],"â—"]},"$31","$65",1],["$","span",null,{"children":"â†—"},"$31","$67",1],["$","small",null,{"children":"O que vem depois?"},"$31","$68",1]]},"$31","$64",1],["$","div",null,{"className":"landing_credit__8oXpt","children":[["$","small",null,{"children":"SEU USADO â†’ NOVAS POSSIBILIDADES"},"$31","$6a",1],["$","p",null,{"children":"iPhone 13 Â· 128 GB"},"$31","$6b",1],["$","strong",null,{"children":["R$ 1.800",["$","span",null,{"children":",00"},"$31","$6d",1]]},"$31","$6c",1],["$","small",null,{"children":"Exemplo ilustrativo de crÃ©dito"},"$31","$6e",1],["$","div",null,{"children":"Uma troca. Um novo comeÃ§o. â†—"},"$31","$6f",1]]},"$31","$69",1],["$","span",null,{"className":"landing_cycle__v5TI9","children":["01 â†’ 02",["$","br",null,{},"$31","$71",1],["$","small",null,{"children":"DO USADO AO NOVO"},"$31","$72",1]]},"$31","$70",1]]},"$31","$61",1]]},"$31","$4e",1],["$","div",null,{"data-reveal":true,"className":"landing_strip__z2CvQ","children":[["$","span",null,{"children":"AVALIE SEU CELULAR"},"$31","$74",1],["$","b",null,{"children":"â†—"},"$31","$75",1],["$","span",null,{"children":"ENVIE PARA INSPEÃ‡ÃƒO"},"$31","$76",1],["$","b",null,{"children":"â†—"},"$31","$77",1],["$","span",null,{"children":"TRANSFORME EM CRÃ‰DITO"},"$31","$78",1]]},"$31","$73",1],["$","section",null,{"id":"como-funciona","className":"landing_section__ICJEz","children":[["$","p",null,{"data-reveal":true,"className":"landing_eyebrow__xr4rD","children":"01 / ENTENDA A TROCA"},"$31","$7a",1],["$","h2",null,{"data-reveal":true,"children":["NÃ£o Ã© sÃ³ trocar de celular.",["$","br",null,{},"$31","$7c",1],"Ã‰ aproveitar o valor dele."]},"$31","$7b",1],["$","div",null,{"className":"landing_steps__Bnb3O","children":[["$","article","01",{"data-reveal":true,"data-delay":0,"children":[["$","span",null,{"children":["01"," â†—"]},"$31","$7f",1],["$","h3",null,{"children":"Conte sobre seu aparelho"},"$31","$80",1],["$","p",null,{"children":"Escolha marca, modelo e armazenamento. Informe como estÃ£o a tela, a bateria e o funcionamento."},"$31","$81",1]]},"$31","$7e",0],["$","article","02",{"data-reveal":true,"data-delay":100,"children":[["$","span",null,{"children":["02"," â†—"]},"$31","$83",1],["$","h3",null,{"children":"ConheÃ§a sua estimativa"},"$31","$84",1],["$","p",null,{"children":"Veja o crÃ©dito calculado com as condiÃ§Ãµes da loja. VocÃª decide se quer continuar."},"$31","$85",1]]},"$31","$82",0],["$","article","03",{"data-reveal":true,"data-delay":200,"children":["$L87","$L88","$L89"]},"$31","$86",0],"$L8a"]},"$31","$7d",1]]},"$31","$79",1],"$L8b","$L8c","$L8d"]},"$31","$4d",1],"$L8e"]},"$31","$35",1]
+90:D"$93"
+90:D"$91"
+90:D"$95"
+90:["$","$L97",null,{"children":["$","$99",null,{"name":"Next.MetadataOutlet","children":"$@9a"},"$91","$98",1]},"$91","$94",1]
+2d:[["children",{"s":"__PAGE__","d":{"r":["$","$7","c",{"children":[["$","$L5","c-page",{"type":"page","pagePath":"page.tsx","children":"$30"},null,"$2f",1],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/app/page.css?v=1793041742034","precedence":"next_static/css/app/page.css","crossOrigin":"$undefined","nonce":"$undefined"},null,"$8f",0]],"$90"]},null,"$2e",0],"p":false,"v":null}}]]
+9c:D"$9f"
+9c:D"$9d"
+9c:D"$a0"
+9c:null
+a1:D"$a3"
+a1:D"$a2"
+a1:D"$a5"
+a8:D"$aa"
+a8:D"$a9"
+a1:["$","$La7","bbfd80d6v",{"children":"$La8"},"$a2","$a4",1]
+ab:D"$ad"
+ab:D"$ac"
+ab:D"$af"
+b4:D"$b6"
+b4:D"$b5"
+b7:D"$b9"
+b7:D"$b8"
+b7:D"$ba"
+b7:null
+ab:["$","$Lb1","bbfd80d6m",{"children":[["$","div",null,{"hidden":true,"children":["$","$99",null,{"name":"Next.Metadata","children":"$Lb4"},"$ac","$b3",1]},"$ac","$b2",1],"$b7"]},"$ac","$ae",1]
+0:{"q":"","i":true,"S":false,"r":"$undefined","b":"development","t":{"t":{"s":"","h":16,"d":{"r":["$","$L5","layout",{"type":"layout","pagePath":"layout.tsx","children":["$","$7","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/app/layout.css?v=1793041742034","precedence":"next_static/css/app/layout.css","crossOrigin":"$undefined","nonce":"$undefined"},null,"$8",0]],"$9"]},null,"$6",1]},null,"$1",0],"p":false,"v":null},"c":"$Q2d"},"h":{"r":["$","$7","h",{"children":["$9c","$a1","$ab"]},null,"$9b",0],"p":false,"v":null}}}
+87:D"$bc"
+87:["$","span",null,{"children":["03"," â†—"]},"$31","$bb",1]
+88:D"$be"
+88:["$","h3",null,{"children":"Confirme e envie"},"$31","$bd",1]
+89:D"$c0"
+89:["$","p",null,{"children":"Informe seus dados e o IMEI. Na operaÃ§Ã£o real, uma autorizaÃ§Ã£o orienta o envio para inspeÃ§Ã£o."},"$31","$bf",1]
+8a:D"$c2"
+8a:["$","article","04",{"data-reveal":true,"data-delay":300,"children":[["$","span",null,{"children":["04"," â†—"]},"$31","$c3",1],["$","h3",null,{"children":"DÃª o prÃ³ximo passo"},"$31","$c4",1],["$","p",null,{"children":"A loja confere o aparelho e libera o crÃ©dito conforme a modalidade escolhida. Uma divergÃªncia pode gerar uma nova proposta."},"$31","$c5",1]]},"$31","$c1",0]
+8b:D"$c7"
+8b:["$","section",null,{"id":"simular","className":"landing_section__ICJEz landing_demo__PjOEp","children":[["$","div",null,{"data-reveal":true,"children":[["$","p",null,{"className":"landing_eyebrow__xr4rD","children":"02 / EXPERIMENTE AGORA"},"$31","$c9",1],["$","h2",null,{"data-reveal":true,"children":["Quanto vale",["$","br",null,{},"$31","$cb",1],"a sua prÃ³xima volta?"]},"$31","$ca",1],["$","p",null,{"children":"Avalie seu aparelho, conheÃ§a a estimativa e conclua uma solicitaÃ§Ã£o de teste. Tudo aqui, sem precisar entrar na plataforma."},"$31","$cc",1],["$","small",null,{"children":"Este ambiente usa cupons e cÃ³digos de postagem simulados. NÃ£o envie aparelhos com esses cÃ³digos."},"$31","$cd",1]]},"$31","$c8",1],["$","div",null,{"data-reveal":true,"data-delay":"160","className":"landing_simCard__aVofF","children":[["$","span",null,{"children":"â†»"},"$31","$cf",1],["$","h3",null,{"children":"Comece pelo que vocÃª jÃ¡ tem."},"$31","$d0",1],["$","p",null,{"children":"Tenha o modelo e o estado do celular em mÃ£os. O IMEI sÃ³ entra na confirmaÃ§Ã£o."},"$31","$d1",1],["$","$L5d",null,{"label":"ComeÃ§ar meu trade-in â†—"},"$31","$d2",1],["$","small",null,{"children":"Use o botÃ£o â€œPreencher dados de testeâ€ no formulÃ¡rio."},"$31","$d3",1]]},"$31","$ce",1]]},"$31","$c6",1]
+8c:D"$d5"
+8c:["$","section",null,{"className":"landing_section__ICJEz landing_questions__p_ojE","children":[["$","p",null,{"data-reveal":true,"className":"landing_eyebrow__xr4rD","children":"03 / SEM DÃšVIDAS NO CAMINHO"},"$31","$d6",1],["$","h2",null,{"data-reveal":true,"children":"Antes da prÃ³xima volta."},"$31","$d7",1],["$","div",null,{"className":"landing_faq__AfA8B","children":[["$","details","O que Ã© trade-in?",{"data-reveal":true,"children":[["$","summary",null,{"children":"O que Ã© trade-in?"},"$31","$da",1],["$","p",null,{"children":"Ã‰ entregar um aparelho usado como parte do pagamento de uma nova compra. A estimativa considera o modelo e o estado do aparelho; o valor Ã© confirmado pela inspeÃ§Ã£o."},"$31","$db",1]]},"$31","$d9",0],["$","details","Onde encontro o IMEI?",{"data-reveal":true,"children":[["$","summary",null,{"children":"Onde encontro o IMEI?"},"$31","$dd",1],["$","p",null,{"children":"Em Ajustes ou ConfiguraÃ§Ãµes, na seÃ§Ã£o Sobre o telefone, ou digitando *#06#. SÃ£o 15 nÃºmeros que identificam o aparelho. Na demonstraÃ§Ã£o o preenchimento Ã© opcional e sÃ³ verificamos o formato, sem consulta real de bloqueio."},"$31","$de",1]]},"$31","$dc",0],["$","details","Quando recebo o crÃ©dito?",{"data-reveal":true,"children":[["$","summary",null,{"children":"Quando recebo o crÃ©dito?"},"$31","$e0",1],["$","p",null,{"children":"Depende da polÃ­tica da loja: cupom ao confirmar a solicitaÃ§Ã£o ou apÃ³s aprovaÃ§Ã£o na inspeÃ§Ã£o. O envio e a conferÃªncia continuam necessÃ¡rios nas duas modalidades."},"$31","$e1",1]]},"$31","$df",0],["$","details","Tenho uma loja. Onde gerencio as trocas?",{"data-reveal":true,"children":[["$","summary",null,{"children":"Tenho uma loja. Onde gerencio as trocas?"},"$31","$e3",1],["$","p",null,{"children":"Acesse a plataforma pelo botÃ£o no topo. LÃ¡ vocÃª gerencia solicitaÃ§Ãµes, preÃ§os e condiÃ§Ãµes e testa o simulador com o catÃ¡logo da sua prÃ³pria loja."},"$31","$e4",1]]},"$31","$e2",0]]},"$31","$d8",1]]},"$31","$d4",1]
+8d:D"$e6"
+eb:D"$ed"
+eb:D"$ec"
+eb:D"$ef"
+eb:["$","$L43",null,{"href":"/dashboard","children":"Acessar plataforma do lojista â†—"},"$ec","$ee",1]
+8d:["$","section",null,{"data-reveal":true,"className":"landing_merchant__DZxIb","children":[["$","p",null,{"className":"landing_eyebrow__xr4rD","children":"PARA QUEM VENDE"},"$31","$e7",1],["$","h2",null,{"data-reveal":true,"children":["Uma nova oportunidade",["$","br",null,{},"$31","$e9",1],"para sua loja tambÃ©m."]},"$31","$e8",1],["$","p",null,{"children":"Configure preÃ§os, acompanhe as avaliaÃ§Ãµes e teste a experiÃªncia do seu cliente em um sÃ³ lugar."},"$31","$ea",1],"$eb"]},"$31","$e5",1]
+8e:D"$f1"
+f2:D"$f4"
+f2:D"$f3"
+f2:D"$f6"
+f2:["$","$L43",null,{"className":"landing_logo__Z__TN","href":"/","children":"voltaâ†—"},"$f3","$f5",1]
+8e:["$","footer",null,{"className":"landing_footer__0UmUP","children":["$f2",["$","p",null,{"children":"Tecnologia para fazer o valor circular."},"$31","$f7",1],["$","small",null,{"children":"Ambiente de demonstraÃ§Ã£o"},"$31","$f8",1]]},"$31","$f0",1]
+a8:D"$f9"
+a8:[["$","meta","0",{"charSet":"utf-8"},"$91","$fa",0],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"},"$91","$fb",0]]
+9a:D"$fc"
+9a:null
+b4:D"$fd"
+b4:[["$","title","0",{"children":"Volta Â· Seu usado tem valor"},"$91","$fe",0],["$","meta","1",{"name":"description","content":"Entenda o trade-in e simule a troca do seu celular usado por crÃ©dito para a prÃ³xima compra."},"$91","$ff",0]]

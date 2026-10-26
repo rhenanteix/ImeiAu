@@ -1,0 +1,21 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/[...path]/route": "app/api/[...path]/route.js",
+  "/api/auth/[...all]/route": "app/api/auth/[...all]/route.js",
+  "/api/b2b/buyer/register/route": "app/api/b2b/buyer/register/route.js",
+  "/api/b2b/matching/auto/route": "app/api/b2b/matching/auto/route.js",
+  "/api/b2b/offers/route": "app/api/b2b/offers/route.js",
+  "/api/b2b/payment/create/route": "app/api/b2b/payment/create/route.js",
+  "/api/b2b/payment/webhook/route": "app/api/b2b/payment/webhook/route.js",
+  "/api/contact/route": "app/api/contact/route.js",
+  "/api/v1/imei/validate/route": "app/api/v1/imei/validate/route.js",
+  "/api/v1/shipping/label/[code]/route": "app/api/v1/shipping/label/[code]/route.js",
+  "/api/v1/uploads/confirm/route": "app/api/v1/uploads/confirm/route.js",
+  "/api/v1/uploads/presign/route": "app/api/v1/uploads/presign/route.js",
+  "/api/v1/webhooks/shipping-status/route": "app/api/v1/webhooks/shipping-status/route.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/login/page": "app/login/page.js",
+  "/offer/page": "app/offer/page.js",
+  "/page": "app/page.js"
+}

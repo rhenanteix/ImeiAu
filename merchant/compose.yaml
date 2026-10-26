@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: tradein
+      POSTGRES_PASSWORD: tradein
+      POSTGRES_DB: tradein_merchant
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - merchant_postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tradein -d tradein_merchant"]
+      interval: 5s
+      retries: 10
+volumes:
+  merchant_postgres:

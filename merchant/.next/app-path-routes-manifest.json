@@ -1,0 +1,21 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/[...path]/route": "/api/[...path]",
+  "/api/auth/[...all]/route": "/api/auth/[...all]",
+  "/api/b2b/buyer/register/route": "/api/b2b/buyer/register",
+  "/api/b2b/matching/auto/route": "/api/b2b/matching/auto",
+  "/api/b2b/offers/route": "/api/b2b/offers",
+  "/api/b2b/payment/create/route": "/api/b2b/payment/create",
+  "/api/b2b/payment/webhook/route": "/api/b2b/payment/webhook",
+  "/api/contact/route": "/api/contact",
+  "/api/v1/imei/validate/route": "/api/v1/imei/validate",
+  "/api/v1/shipping/label/[code]/route": "/api/v1/shipping/label/[code]",
+  "/api/v1/uploads/confirm/route": "/api/v1/uploads/confirm",
+  "/api/v1/uploads/presign/route": "/api/v1/uploads/presign",
+  "/api/v1/webhooks/shipping-status/route": "/api/v1/webhooks/shipping-status",
+  "/dashboard/page": "/dashboard",
+  "/login/page": "/login",
+  "/offer/page": "/offer",
+  "/page": "/"
+}

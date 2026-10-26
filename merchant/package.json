@@ -1,0 +1,61 @@
+{
+  "name": "volta-merchant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node scripts/sync-assets.mjs && next dev --webpack",
+    "build": "prisma generate && node scripts/sync-assets.mjs && next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate deploy",
+    "db:seed": "prisma db seed",
+    "assets": "node scripts/sync-assets.mjs",
+    "worker": "node --import tsx scripts/worker.ts",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "test:e2e": "playwright test",
+    "test:db": "node --import tsx scripts/test-db.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.10.1",
+    "@prisma/client": "^7.10.1",
+    "@radix-ui/react-slot": "^1.5.0",
+    "better-auth": "^1.7.13",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^18.0.9",
+    "lucide-react": "^1.61.0",
+    "next": "^16.4.3",
+    "nodemailer": "^10.2.1",
+    "pg": "^8.23.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwind-merge": "^3.7.0",
+    "zod": "^4.6.7"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.12",
+    "@electric-sql/pglite-socket": "^0.2.15",
+    "@playwright/test": "^1.64.1",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.5",
+    "@types/nodemailer": "^8.0.2",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "prettier": "^3.9.10",
+    "prisma": "^7.10.1",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

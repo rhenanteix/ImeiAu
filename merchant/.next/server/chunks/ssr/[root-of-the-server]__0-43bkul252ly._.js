@@ -1,0 +1,3 @@
+module.exports=[[24951,(a,b,c)=>{b.exports=a.r(18622)},7997,(a,b,c)=>{b.exports=a.r(24951).vendored["react-rsc"].ReactJsxRuntime},27572,a=>{var b=a.i(7997);a.s(["default",0,function({children:a}){return(0,b.jsx)("html",{lang:"pt-BR",children:(0,b.jsx)("body",{suppressHydrationWarning:!0,children:a})})},"metadata",0,{icons:{icon:"/imeiau.png",apple:"/imeiau.png"},title:"IMEIAU · Painel do lojista",description:"Gestão de trade-in, preços e inspeções."}])}],18622,(a,b,c)=>{b.exports=a.x("next/dist/compiled/next-server/app-page-turbo.runtime.prod.js",()=>require("next/dist/compiled/next-server/app-page-turbo.runtime.prod.js"))},50645,function(a){a.n(a.i(27572))}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__0-43bkul252ly._.js.map

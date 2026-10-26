@@ -1,0 +1,299 @@
+.section {
+  max-width: 1240px;
+  margin: auto;
+  padding: 100px 40px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 70px;
+  align-items: start;
+  scroll-margin-top: 30px;
+}
+.copy {
+  padding-top: 25px;
+}
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  color: #687958;
+}
+.copy h2 {
+  font-size: clamp(35px, 4vw, 52px);
+  line-height: 1.08;
+  letter-spacing: -0.05em;
+  margin: 24px 0;
+}
+.copy em {
+  font-style: normal;
+  color: #63884a;
+}
+.copy > p:not(.eyebrow) {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #607262;
+  max-width: 420px;
+}
+.benefits {
+  display: grid;
+  gap: 16px;
+  margin: 30px 0 40px;
+  font-size: 14px;
+}
+.benefits span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.benefits svg {
+  color: #628441;
+}
+.email {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.form {
+  background: #fffef9;
+  border: 1px solid #dce4d4;
+  border-radius: 22px;
+  padding: 32px;
+  box-shadow: 0 15px 50px #183e3207;
+}
+.form h3 {
+  font-size: 24px;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+.form > p {
+  color: #687568;
+  font-size: 14px;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.form label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 18px 0 7px;
+}
+.form input:not([type="checkbox"]),
+.form select,
+.form textarea {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #cdd8c5;
+  border-radius: 9px;
+  background: white;
+  padding: 12px;
+  font: 14px/1.5 Arial;
+  color: #203b30;
+}
+.form textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+.form .consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #607262;
+  margin: 20px 0;
+}
+.consent input {
+  margin-top: 4px;
+  accent-color: #345737;
+}
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 15px 18px;
+  background: #d7f19d;
+  color: #183e32;
+  font: 600 14px Arial;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.submit:hover {
+  background: #c8e787;
+  transform: translateY(-1px);
+}
+.submit:disabled {
+  opacity: 0.65;
+  cursor: wait;
+  transform: none;
+}
+.form > small {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #687568;
+  margin-top: 14px;
+}
+.form .error {
+  color: #a12a27;
+  background: #fff1ef;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+.honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.dialog {
+  padding: 0;
+  border: 1px solid #dce4d4;
+  border-radius: 24px;
+  width: min(490px, calc(100vw - 32px));
+  margin: auto;
+  background: #fffef9;
+  color: #183e32;
+  box-shadow: 0 30px 100px #17362944;
+  max-height: 90dvh;
+}
+.dialog::backdrop {
+  background: #102b23b3;
+  backdrop-filter: blur(7px);
+}
+.modalBody {
+  position: relative;
+  padding: 38px;
+  text-align: center;
+}
+.close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  border: 0;
+  background: #edf1e7;
+  border-radius: 50%;
+  padding: 8px;
+  color: #183e32;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.check {
+  width: 78px;
+  height: 78px;
+  display: grid;
+  place-items: center;
+  background: #e4f4c7;
+  border-radius: 50%;
+  margin: 30px auto 24px;
+  color: #436a33;
+  box-shadow: 0 0 0 10px #f1f7e7;
+}
+.dialog h2 {
+  font-size: 36px;
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+  margin: 18px 0;
+}
+.dialog p:not(.eyebrow) {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #607262;
+}
+.receipt {
+  display: flex;
+  gap: 12px;
+  text-align: left;
+  background: #f1f4ea;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 24px 0;
+  font-size: 12px;
+  align-items: center;
+}
+.receipt small {
+  display: block;
+  font-size: 9px;
+  overflow-wrap: anywhere;
+  margin-top: 6px;
+  color: #687568;
+}
+.dialog[open] {
+  animation: arrive 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.dialog[open] .check {
+  animation: check 0.55s 0.1s both cubic-bezier(0.22, 1, 0.36, 1);
+}
+@keyframes arrive {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes check {
+  from {
+    opacity: 0;
+    transform: scale(0.65);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (max-width: 850px) {
+  .section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 65px 24px;
+  }
+  .copy {
+    padding-top: 0;
+  }
+  .copy > p:not(.eyebrow) {
+    max-width: none;
+  }
+  .benefits {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .form {
+    padding: 23px;
+  }
+  .modalBody {
+    padding: 35px 24px;
+  }
+  .dialog h2 {
+    font-size: 31px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dialog,
+  .check,
+  .submit {
+    animation: none !important;
+    transition: none !important;
+  }
+}
