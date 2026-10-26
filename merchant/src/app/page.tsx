@@ -167,7 +167,7 @@ export default function Page() {
           </div>
         </section>
         */}
-<section id="demonstracao" className={`${styles.section} ${styles.demo}`}>
+        <section id="demonstracao" className={`${styles.section} ${styles.demo}`}>
           <div data-reveal>
             <p className={styles.eyebrow}>02 / VEJA EM AÇÃO</p>
             <h2 data-reveal>
@@ -290,7 +290,6 @@ export default function Page() {
         </Link>
         <p>Tecnologia para fazer o valor circular.</p>
         <a href="mailto:contato@ribeiraconnect.com.br">contato@ribeiraconnect.com.br</a>
-        <small>Ambiente de demonstração</small>
       </footer>
     </LandingMotion>
   );
