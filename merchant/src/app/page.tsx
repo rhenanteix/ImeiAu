@@ -243,7 +243,7 @@ export default function Page() {
           </div>
         </section>
         {/* <ContactForm /> */}
-        <section id="recondicionadores" style={{ background: "#183e32", color: "#f7f7ee", padding: "75px 40px", margin: "0 24px", borderRadius: 24 }}>
+        <section id="recondicionadores" style={{ background: "#183e32", color: "#f7f7ee", padding: "75px 40px", margin: "0 24px 24px", borderRadius: 24 }}>
           <div style={{ maxWidth: 1240, margin: "auto" }}>
             <p style={{ fontSize: 11, letterSpacing: "0.17em", fontWeight: 700, color: "#d5efaa", marginBottom: 16 }}>MERCADO DE RECONDICIONADORES & GRANDES LOJISTAS</p>
             <h2 style={{ fontSize: "clamp(32px,4vw,48px)", marginBottom: 12 }}>Sincronização &amp; Ingestão Universal de Dados</h2>
