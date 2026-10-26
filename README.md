@@ -1,56 +1,103 @@
-# Volta · MVP de Trade-in
+<p align="center">
+  <img src="imeiau.png" alt="Logo ImeiAU" width="150" />
+</p>
 
-**Fase 2 disponível:** [Dashboard Next.js + Prisma](merchant/README.md), com configurações por loja, preços, vistoria e contraproposta. O aplicativo Python abaixo permanece como Fase 1.
+<h1 align="center">💚 ImeiAU · MVP de Trade-in</h1>
 
-Landing B2B e Web Component conectados à API FastAPI. PostgreSQL recomendado; SQLite disponível para desenvolvimento sem Docker. Preços, cupons e postagem são demonstrativos. Não há integração real com e-commerce ou Correios.
+<p align="center">
+  <em>Transformando celulares usados em crédito com praticidade e transparência ✨</em>
+</p>
 
-## Executar
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/FastAPI-005571?logo=fastapi" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs" alt="Next.js" />
+  <img src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma" alt="Prisma" />
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white" alt="PostgreSQL" />
+</p>
 
-Python 3.11+ (validado com 3.14).
+---
 
-```sh
+## ✨ Sobre o projeto
+
+O **ImeiAU** é uma solução de *trade-in* B2B que permite que lojas ofereçam a troca de celulares usados por crédito na compra. 
+
+Temos duas versões disponíveis:
+
+- 🐍 **Fase 1 (Python + FastAPI)** - Landing B2B + Web Component
+- ⚡ **Fase 2 ([Dashboard Next.js + Prisma](merchant/README.md))** - Configurações por loja, preços, vistoria e contraproposta
+
+> *Os preços, cupons e integrações são apenas demonstrativos. Não há integração real com e-commerces ou Correios.*
+
+---
+
+## 🚀 Como executar (Fase 1)
+
+**Requisitos:** Python 3.11+
+
+```bash
+# Criar ambiente virtual
 python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
+source .venv/bin/activate  # Linux/Mac
+# .venv\Scripts\activate   # Windows
+
+# Instalar dependências
+pip install -r requirements.txt
+
+# Configurar variáveis de ambiente
 cp .env.example .env
-.venv/bin/uvicorn app.main:app --reload --env-file .env
+
+# Rodar a API
+uvicorn app.main:app --reload --env-file .env
 ```
 
-Abra http://localhost:8000. Documentação interativa: http://localhost:8000/docs.
-O banco e os dados de exemplo são criados no startup. Não use dados pessoais reais na demonstração.
+Acesse: **[http://localhost:8000](http://localhost:8000)**  
+Docs interativas: **[http://localhost:8000/docs](http://localhost:8000/docs)**
 
-```sh
+O banco e os dados de exemplo são criados automaticamente na inicialização.  
+**Não use dados pessoais reais nesta demonstração!**
+
+### 🐘 Usando PostgreSQL
+
+```bash
+docker compose up -d db
+```
+
+Altere `DATABASE_URL` no `.env` para:
+
+```env
+DATABASE_URL=postgresql+psycopg://tradein:tradein@localhost:5432/tradein
+```
+
+As credenciais do Compose são apenas para uso local.
+
+### 🧪 Testes
+
+```bash
 .venv/bin/python -m pytest -q
 node --check static/widget.js
 node --check static/landing.js
 ```
 
-Para PostgreSQL:
+---
 
-```sh
-docker compose up -d db
-```
-
-Altere `DATABASE_URL` em `.env` para `postgresql+psycopg://tradein:tradein@localhost:5432/tradein` e reinicie a API. As credenciais do Compose são apenas locais.
-
-## Estrutura
+## 🗂 Estrutura do projeto
 
 ```text
-app/
-  main.py          # API, schemas de entrada, cotação, seed e estados
-  models.py        # SQLAlchemy: entidades e conexão SQLite/PostgreSQL
-static/
-  index.html       # Landing B2B sem build
-  styles.css       # Layout responsivo
-  landing.js       # Captação persistente de leads
-  widget.js        # Web Component independente com Shadow DOM
-schema.sql         # DDL PostgreSQL gerado a partir dos modelos
-tests/test_api.py  # Testes de integração (banco temporário)
-compose.yaml       # PostgreSQL local
-.env.example
-requirements.txt   # Dependências fixadas
+ImeiAU/
+├── app/           # API FastAPI, schemas, cotação, seed e regras
+├── static/        # Landing page, estilos e Web Component
+├── tests/         # Testes de integração
+├── merchant/      # Dashboard Next.js (Fase 2)
+├── imeiau.png     # Logo do projeto
+└── compose.yaml   # PostgreSQL local
 ```
 
-## Embutir o widget
+---
+
+## 🧩 Embutindo o Widget
+
+Basta adicionar o script e o componente na sua página:
 
 ```html
 <script defer src="http://localhost:8000/widget.js"></script>
@@ -61,75 +108,49 @@ requirements.txt   # Dependências fixadas
 </trade-in-widget>
 ```
 
-Adicione a origem exata da loja a `ALLOWED_ORIGINS` (separadas por vírgula). Em produção use HTTPS. `store-id` é identificador público, nunca uma credencial. Há duas lojas semeadas: `demo` permite cupom instantâneo ou pós-inspeção; `demo-inspection` permite apenas pós-inspeção. Substitua o atributo para testar a restrição. O script não requer bundler e isola seu CSS com Shadow DOM. O modal nativo oferece foco contido e fechamento com Escape.
+- Adicione a origem exata da loja em `ALLOWED_ORIGINS` (separadas por vírgula)
+- Em produção, use **HTTPS**
+- `store-id` é um identificador público, **nunca uma credencial**
+- Lojas semeadas: `demo` (cupom instantâneo ou pós-inspeção) e `demo-inspection` (apenas pós-inspeção)
+- Feito com **Shadow DOM** para isolamento total de CSS
+- Modal acessível com foco contido e fechamento via `Esc`
 
-## Contratos da API
+---
 
-Valores monetários são inteiros em **centavos BRL**. A árvore de aparelhos inclui IDs que identificam modelo e capacidade juntos.
+## 📡 Contratos da API
 
-- `GET /api/v1/devices?store_id=demo`: árvore marca → modelo → versões.
-- `POST /api/v1/quotes/calculate`: estimativa, descontos e modalidades permitidas.
-- `POST /api/v1/tradein/create`: cliente, endereço, condição, modalidade e consentimento; exige cabeçalho `Idempotency-Key` (8–100 caracteres).
-- `POST /api/v1/leads`: nome, loja, WhatsApp, e-mail, plataforma e consentimento.
-- `PATCH /api/v1/tradein/{id}/status`: operação administrativa com `Authorization: Bearer <ADMIN_TOKEN>`; desabilitada se token estiver ausente.
+> Valores monetários são sempre em **centavos BRL**.  
+> A árvore de aparelhos identifica modelo e capacidade juntos.
 
-Exemplo de cotação:
+| Método | Endpoint | Descrição |
+| --- | --- | --- |
+| `GET` | `/api/v1/devices?store_id=demo` | Lista marcas → modelos → versões |
+| `POST` | `/api/v1/quotes/calculate` | Calcula estimativa com descontos por condição |
+| `POST` | `/api/v1/tradein/create` | Cria solicitação de trade-in (requer `Idempotency-Key`) |
+| `POST` | `/api/v1/leads` | Captura lead da landing page |
+| `PATCH` | `/api/v1/tradein/{id}/status` | Atualiza status (requer `Authorization: Bearer <ADMIN_TOKEN>`) |
 
-```sh
+### Exemplo de cotação
+
+```bash
 curl http://localhost:8000/api/v1/quotes/calculate \
   -H 'Content-Type: application/json' \
   -d '{"store_id":"demo","device_id":"iphone13-128","condition":{"powers_on":true,"screen_intact":false,"battery_ok":true}}'
 ```
 
-Retorna `estimated_value: 135000` (R$ 1.350,00). O iPhone 13 128GB tem base fictícia de R$ 1.800,00. Respostas negativas abatem 60% (não liga), 25% (tela) e 10% (bateria), somados sobre a base, limitados a 100%, com arredondamento em centavos. Não se trata de uma tabela FIPE oficial.
-
-Criação (ver os schemas completos no Swagger):
-
 ```json
 {
-  "store_id": "demo",
-  "device_id": "iphone13-128",
-  "condition": {"powers_on": true, "screen_intact": true, "battery_ok": true},
-  "mode": "instant_coupon",
-  "consent": true,
-  "customer": {
-    "name": "Cliente de teste",
-    "email": "teste@example.com",
-    "phone": "11999999999",
-    "cpf": "52998224725",
-    "address": {
-      "postal_code": "01001000", "street": "Rua de teste", "number": "123",
-      "complement": "", "neighborhood": "Centro", "city": "São Paulo", "state": "SP"
-    }
-  }
+  "estimated_value": 135000
 }
 ```
 
-O servidor recalcula o valor durante a criação; valores enviados pelo cliente são rejeitados. Repetir a mesma chave e corpo retorna a solicitação existente; mudar o corpo com a mesma chave retorna 409. CPF tem validação dos dígitos verificadores, não verificação de identidade. Não há endpoint público que exponha os dados do cliente.
+**R$ 1.350,00** para um iPhone 13 128GB com base fictícia de **R$ 1.800,00**.
 
-## Estados e concessão
+*Descontos:* Não liga (-60%) • Tela trincada (-25%) • Bateria ruim (-10%)  
+*Os descontos são cumulativos e limitados a 100%. Valores arredondados em centavos. Não é uma tabela FIPE oficial.*
 
-```mermaid
-stateDiagram-v2
-  [*] --> pending_shipping
-  pending_shipping --> shipped
-  shipped --> inspecting
-  inspecting --> approved
-  inspecting --> rejected
-```
+---
 
-Instantâneo: gera cupom na criação. Pós-inspeção: `coupon_code` permanece nulo até `approved`. Rejeição remove o cupom simulado. As mudanças exigem token administrativo; aprovação repetida não duplica cupom. A postagem é gerada nas duas modalidades. Todos os códigos começam com `DEMO` e a resposta inclui `simulated: true`.
-
-O mock é local e transacional, sem chamadas externas. Ao integrar provedores reais, extraia adaptadores de cupons por plataforma e de logística; use outbox/fila, idempotência no provedor e reconciliação. A revogação real de um cupom já utilizado exige política comercial específica.
-
-## Schema e próximos passos
-
-`schema.sql` contém as tabelas PostgreSQL. `api_keys` armazena apenas referências a segredos, nunca credenciais em claro. `customer_data` e `condition` são JSON; valores financeiros são inteiros. Há chaves estrangeiras, unicidade por aparelho e chave de idempotência por loja. `create_all` atende à inicialização do MVP, não à evolução do banco: adote migrações Alembic antes de alterações de schema em operação.
-
-Antes de um piloto real: autenticação e autorização por lojista, gestão de configurações, proteção contra abuso/rate limiting, consentimentos versionados, política de retenção e eliminação, proteção dos dados pessoais, antifraude, webhooks autenticados, rastreamento, notificações de aprovação e integrações comerciais. CORS permite embutir o widget, mas não autentica requisições nem impede abuso. O token administrativo global é apenas um mecanismo de desenvolvimento; não o distribua no widget.
-
-Referências técnicas: [FastAPI CORS](https://fastapi.tiangolo.com/tutorial/cors/) e [SQLAlchemy ORM](https://docs.sqlalchemy.org/en/20/orm/).
-
-## Validação realizada
-
-7 testes de integração aprovados com SQLite e verificação de sintaxe dos dois scripts JavaScript. PostgreSQL e interação visual em navegador não foram executados neste ambiente. O TestClient emite um aviso de depreciação do transporte httpx, sem falhas nos testes.
+<p align="center">
+  Feito com 💚 pela equipe ImeiAU
+</p>
