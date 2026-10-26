@@ -242,7 +242,34 @@ export default function Page() {
             ))}
           </div>
         </section>
-        <ContactForm />
+        {/* <ContactForm /> */}
+        <section id="recondicionadores" className="px-6 py-24 bg-gradient-to-b from-slate-950 to-slate-900 text-white">
+          <div className="max-w-6xl mx-auto">
+            <p className="text-sm uppercase tracking-widest text-orange-400 mb-4">MERCADO DE RECONDICIONADORES & GRANDES LOJISTAS</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Sincronização &amp; Ingestão Universal de Dados</h2>
+            <p className="text-slate-300 max-w-2xl mb-12">Capacidades do IMEIAU para recondicionadores e lojistas: importação multi-formato, antifraude, grading e exportação de lotes.</p>
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                ["⚡ Importação Multi-formato (API, XLSX, XML)", "Conecte sua Tabela FIPE de Usados como quiser.", "Importe facilmente suas planilhas de preços (XLSX/CSV), conecte feeds XML de fornecedores ou integre via API REST em tempo real. Atualização instantânea da tabela de trade-in sem esforço manual."],
+                ["🛡️ Antifraude e Validação Instantânea de IMEI", "Blindagem total contra bloqueios e irregularidades.", "Cruzamento automático do IMEI com bases oficiais contra perdas, roubos, furtos e bloqueios de operadoras antes de qualquer liberação de cupom."],
+                ["🤖 Classificação de Grau de Desgaste (Grading A/B/C)", "Avaliação precisa baseada na condição real do aparelho.", "Questionário inteligente e análise de fotos que categorizam o produto em Graus (A, B ou C), evitando divergências de valores entre o cliente e o técnico da loja."],
+                ["📦 Exportação de Lotes e Integração com ERP", "Do checkout direto para o seu controle de estoque.", "Exporte relatórios de aparelhos coletados via Trade-in em XLSX/XML ou sincronize direto com o seu ERP para liquidação rápida ou repasse B2B."],
+              ].map(([icon, headline, desc]) => (
+                <article key={headline} className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 hover:border-orange-500/50 transition-colors">
+                  <div className="text-2xl mb-3">{icon.split(" ")[0]}</div>
+                  <h3 className="text-xl font-semibold mb-1">{icon.replace(/^\S+\s/, "")}</h3>
+                  <p className="text-orange-400 text-sm mb-2">{headline}</p>
+                  <p className="text-slate-300 text-sm">{desc}</p>
+                </article>
+              ))}
+            </div>
+            <div className="mt-12 flex flex-wrap gap-3">
+              {["Shopify", "Nuvemshop", "WooCommerce", "Integração Customizada (API)"].map((b) => (
+                <span key={b} className="px-4 py-2 rounded-full border border-slate-700 text-sm text-slate-200">✓ {b}</span>
+              ))}
+            </div>
+          </div>
+        </section>
         <section data-reveal className={styles.merchant}>
           <p className={styles.eyebrow}>PARA QUEM VENDE</p>
           <h2 data-reveal>
@@ -262,6 +289,7 @@ export default function Page() {
           <Brand />
         </Link>
         <p>Tecnologia para fazer o valor circular.</p>
+        <a href="mailto:contato@ribeiraconnect.com.br">contato@ribeiraconnect.com.br</a>
         <small>Ambiente de demonstração</small>
       </footer>
     </LandingMotion>
