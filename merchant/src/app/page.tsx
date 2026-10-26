@@ -243,29 +243,29 @@ export default function Page() {
           </div>
         </section>
         {/* <ContactForm /> */}
-        <section id="recondicionadores" className="px-6 py-24 bg-gradient-to-b from-slate-950 to-slate-900 text-white">
-          <div className="max-w-6xl mx-auto">
-            <p className="text-sm uppercase tracking-widest text-orange-400 mb-4">MERCADO DE RECONDICIONADORES & GRANDES LOJISTAS</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Sincronização &amp; Ingestão Universal de Dados</h2>
-            <p className="text-slate-300 max-w-2xl mb-12">Capacidades do IMEIAU para recondicionadores e lojistas: importação multi-formato, antifraude, grading e exportação de lotes.</p>
-            <div className="grid md:grid-cols-2 gap-6">
+        <section id="recondicionadores" style={{ background: "#183e32", color: "#f7f7ee", padding: "80px 40px" }}>
+          <div style={{ maxWidth: 1240, margin: "auto" }}>
+            <p style={{ fontSize: 11, letterSpacing: "0.17em", fontWeight: 700, color: "#d5efaa", marginBottom: 16 }}>MERCADO DE RECONDICIONADORES & GRANDES LOJISTAS</p>
+            <h2 style={{ fontSize: "clamp(32px,4vw,48px)", marginBottom: 12 }}>Sincronização &amp; Ingestão Universal de Dados</h2>
+            <p style={{ maxWidth: 640, marginBottom: 40, color: "#dce3d8" }}>Capacidades do IMEIAU para recondicionadores e lojistas.</p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: 20 }}>
               {[
-                ["⚡ Importação Multi-formato (API, XLSX, XML)", "Conecte sua Tabela FIPE de Usados como quiser.", "Importe facilmente suas planilhas de preços (XLSX/CSV), conecte feeds XML de fornecedores ou integre via API REST em tempo real. Atualização instantânea da tabela de trade-in sem esforço manual."],
-                ["🛡️ Antifraude e Validação Instantânea de IMEI", "Blindagem total contra bloqueios e irregularidades.", "Cruzamento automático do IMEI com bases oficiais contra perdas, roubos, furtos e bloqueios de operadoras antes de qualquer liberação de cupom."],
-                ["🤖 Classificação de Grau de Desgaste (Grading A/B/C)", "Avaliação precisa baseada na condição real do aparelho.", "Questionário inteligente e análise de fotos que categorizam o produto em Graus (A, B ou C), evitando divergências de valores entre o cliente e o técnico da loja."],
-                ["📦 Exportação de Lotes e Integração com ERP", "Do checkout direto para o seu controle de estoque.", "Exporte relatórios de aparelhos coletados via Trade-in em XLSX/XML ou sincronize direto com o seu ERP para liquidação rápida ou repasse B2B."],
-              ].map(([icon, headline, desc]) => (
-                <article key={headline} className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 hover:border-orange-500/50 transition-colors">
-                  <div className="text-2xl mb-3">{icon.split(" ")[0]}</div>
-                  <h3 className="text-xl font-semibold mb-1">{icon.replace(/^\S+\s/, "")}</h3>
-                  <p className="text-orange-400 text-sm mb-2">{headline}</p>
-                  <p className="text-slate-300 text-sm">{desc}</p>
+                ["⚡", "Importação Multi-formato (API, XLSX, XML)", "Conecte sua Tabela FIPE de Usados como quiser.", "Importe facilmente suas planilhas de preços (XLSX/CSV), conecte feeds XML de fornecedores ou integre via API REST em tempo real. Atualização instantânea da tabela de trade-in sem esforço manual."],
+                ["🛡️", "Antifraude e Validação Instantânea de IMEI", "Blindagem total contra bloqueios e irregularidades.", "Cruzamento automático do IMEI com bases oficiais contra perdas, roubos, furtos e bloqueios de operadoras antes de qualquer liberação de cupom."],
+                ["🤖", "Classificação de Grau de Desgaste (Grading A/B/C)", "Avaliação precisa baseada na condição real do aparelho.", "Questionário inteligente e análise de fotos que categorizam o produto em Graus (A, B ou C), evitando divergências de valores entre o cliente e o técnico da loja."],
+                ["📦", "Exportação de Lotes e Integração com ERP", "Do checkout direto para o seu controle de estoque.", "Exporte relatórios de aparelhos coletados via Trade-in em XLSX/XML ou sincronize direto com o seu ERP para liquidação rápida ou repasse B2B."],
+              ].map(([icon, title, headline, desc]) => (
+                <article key={title} style={{ background: "#2a4f40", borderRadius: 16, padding: 24, border: "1px solid #3d6b55" }}>
+                  <div style={{ fontSize: 28, marginBottom: 8 }}>{icon}</div>
+                  <h3 style={{ fontSize: 18, marginBottom: 6 }}>{title}</h3>
+                  <p style={{ color: "#d5efaa", fontSize: 14, marginBottom: 8 }}>{headline}</p>
+                  <p style={{ color: "#dce3d8", fontSize: 14 }}>{desc}</p>
                 </article>
               ))}
             </div>
-            <div className="mt-12 flex flex-wrap gap-3">
+            <div style={{ marginTop: 32, display: "flex", flexWrap: "wrap", gap: 12 }}>
               {["Shopify", "Nuvemshop", "WooCommerce", "Integração Customizada (API)"].map((b) => (
-                <span key={b} className="px-4 py-2 rounded-full border border-slate-700 text-sm text-slate-200">✓ {b}</span>
+                <span key={b} style={{ padding: "8px 16px", borderRadius: 999, border: "1px solid #63884a", fontSize: 13 }}>{b}</span>
               ))}
             </div>
           </div>
